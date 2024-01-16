@@ -1,0 +1,136 @@
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .column {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  .column:first-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  /* Limpa o float após as colunas para evitar problemas de layout */
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #posts {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: start;
+  }
+  
+  .posts-item {
+    width: calc(75%); /* Ajuste a porcentagem conforme desejado */
+    padding: 1rem;
+  }
+  
+  #main {
+    max-width: 300px; /* Largura máxima para a seção Github */
+    margin: 0 auto; /* Centraliza a seção na coluna */
+  }
+  
+  /* Adaptação para telas menores */
+  @media (max-width: 768px) {
+    .column {
+      width: 100%;
+      border-right: none;
+    }
+  
+    #posts .posts-item {
+      width: 100%; /* Em telas menores, cada item ocupa 100% da largura */
+    }
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    color: darkblue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .button {
+    background-color: darkblue;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+  }
+  
+  .button:hover {
+    opacity: .75;
+  }
+  
+  .posts-item {
+    width: calc(75%); /* Ajuste a porcentagem conforme desejado */
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
