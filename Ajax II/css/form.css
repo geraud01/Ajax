@@ -1,34 +1,82 @@
-form {
-    border: 1px solid #999;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 2rem;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
 }
+
+h1 {
+    font-size: 2.2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+header {
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 4rem;
+    width: 100%;
+}
+
+footer {
+    background-color: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+form {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .input-group,
 input {
     display: block;
-    font-size: 1.8rem;
-    width: 50rem;
-    margin: 1rem auto
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 1rem 0;
 }
 
 label {
     font-size: 1.6rem;
+    color: #333;
 }
 
 button {
+    border: none;
     border-radius: 5px;
     background-color: darkblue;
     color: #fff;
     font-size: 1.6rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a487e; /* Tom mais escuro ao passar o mouse */
 }
 
 #mensagem p {
     font-size: 1.4rem;
     color: #f00;
+    margin: 0.5rem 0;
 }
 
 strong {
     font-size: 1.4rem;
+    color: #333;
 }
+
