@@ -10,7 +10,7 @@ const postContainer = document.getElementById('posts')
 let postMarkup = ''
 let postLength = 0
 
-// Cadastra um post
+
 function setPost(data) {
 
     fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -25,7 +25,7 @@ function setPost(data) {
     .catch(error => console.error(error))   
 }
 
-// Solicita todos os posts
+
 function getPosts() {
     fetch('https://jsonplaceholder.typicode.com/posts/', {
         headers: {
@@ -40,7 +40,6 @@ function getPosts() {
     .catch(error => console.error(error))  
 }
 
-// Solicita um post por ID
 function getPost(id) {
     fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
         headers: {
